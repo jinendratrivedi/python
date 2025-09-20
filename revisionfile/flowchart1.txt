@@ -1,0 +1,11 @@
+plan a movie tickit:
+
+step 0: start
+step 1: plan to show movie 
+step 2: book a movie tickit
+step 3: arrange the vehical
+step 4: go to multiplex
+step 5: search the sit and watch the movie
+step 6: take a popcorn and enjoy the popcorn
+step 7:end movie and go home
+step 8: stop

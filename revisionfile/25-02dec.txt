@@ -1,0 +1,433 @@
+#LIST-> It ia a datatype which store diff types of datatypes
+#    -> It is rep in [ ]
+#    -> List is ordered , mutable (changeable), allow duplicates
+
+
+# li=[1,2,3,"chetan","jitendra",78.90,True,2,3,"chetan","jitendra"]
+# print(li)
+# print(li[3])
+
+# li[4]="python lang"
+# print(li)
+
+# li1=[1,2,3,["abc","efg","a"],True,12,"HIIIIIII"]
+# print(li1[3][1])
+# print(len(li1))
+# print(type(li1))
+
+# li=[1,2,3,"chetan","jitendra",78.90,True,2,3,"chetan","jitendra"]
+
+# #slicing
+# print(li[2:7])
+# print(li[ :8])
+# print(li[5:])
+# print(li[-5:-2])
+
+# print(li[0:8:2])
+# print(li[0: :4])
+
+# print(li[: :-1])
+
+
+# #Methods of list
+# li=[2,4,6,"abc","hiiiii",2,2,"earth",True,2,4,"abc",2,2,2,2]
+
+# li.append("royal technosot")    # it adds element at last
+# print(li)
+# li.insert(1,"humans")   # it adds element at particular index
+# print(li)
+
+# li.remove(2)    #It removes particular item
+# print(li)
+# li.pop()         #It removes last item
+# print(li)
+
+# li1=["abc","hiiiii","efg","yzd","dog"]
+# li1.sort()    #It sort list ascending order
+# print(li1)
+# li1.sort(reverse=True)    #It sort list descending order
+# print(li1)
+# li=[2,4,6,"abc","hiiiii",2,2,"earth",True,2,4,True,True,"abc",2,2,2,2]
+# # print(li.count(True))
+
+
+# print(li.index("hiiiii"))  # it returns the index of particular element
+
+# li1=li.copy()
+# print(li1)
+# li.clear()
+# print(li)
+
+#TASK
+# li=[2,4,5,1,6,7,8,11,2,1,22]
+# # in a given list , find maximum , minimum , find sum and also sort list
+# in ascending and descending order
+
+# print("maximum element is: ",max(li))
+
+# li=[2,4,5,1,6,7,8,11,2,1,22]
+# #find product of all elements in a list
+
+# prod=1
+# for i in li:
+#     prod*=i
+    
+# print("product is:",prod)
+
+#wap to input 10 values from user and store only non repeating values in list
+
+# li=[]
+
+# for i in range(1,11):
+#     a=input("enter elements for list: ")
+#     if a not in li:
+#         li.append(a)
+    
+# print(li)
+
+#wap to input 10 integer values from user and store only even values
+#wap to check if list is empty or not
+
+# li=[]
+# for i in range(1,11):
+#     a=int(input("enter elements:"))
+#     if a%2==0:
+#         li.append(a)
+        
+# print(li)
+
+
+# li=[1,2]
+# if len(li)==0:
+#     print("empty list")
+# else:
+#      print("not empty list")
+     
+#wap to check if element input by user is present in list or not   
+     
+# li=[2,3,4,1,5,66]
+  
+# element=int(input("enter a element:"))
+# if element in li:
+#     print("element is present")
+# else:
+#     print("not present")
+  
+# Write a Python program to count the number of strings from a given list of strings. 
+# The string length is 2 or more and the first and last characters are the same.
+# Sample List : ['abc', 'xyz', 'aba', '1221']
+# Expected Result : 2
+  
+# li = ['abc', 'xyz', 'aba', '1221',"a","moon","mom"]
+  
+# count=0
+# for i in li:
+#     if len(i)>2 and i[0]==i[-1]:
+#         count+=1
+        
+# print("total count is:",count)
+        
+#wap print only those string which starts and ends with "a" in the list
+# li = ['abc', 'xyz',"acca",'aba', '1221',"a","moon","mom"]
+  
+# for i in li:
+#     if i[0]=="a" and i[-1]=="a":
+#         print(i)
+
+
+#wap to input 10 values from user and store it in list
+
+# li=[]
+# for i in range(1,11):
+#     a=input("enter values for list:")
+#     li.append(a)
+    
+# print(li)
+
+#wap to input 10 integer values from user and store only odd values in list
+
+# li=[]
+# for i in range(1,11):
+#     a=int(input("enter a value: "))
+#     if a%2!=0:
+#         li.append(a)
+        
+# print(li)
+
+#wap to continously input values from user and store it in a list but stop storing in list
+# if user input 100
+
+# li=[]
+# while True:
+#     a=int(input("enter a number: "))
+#     if a==100:
+#         break
+#     li.append(a)
+    
+# print(li)
+    
+#wap to Check Common Member Between Two Lists
+
+# li1=["a","b","abc",2,1,4,5,6]
+# li2=["a",5,6,"abc","lmno",100,200]
+
+# li=[]
+
+# for i in li1:
+#     for j in li2:
+#         if i==j:
+#             li.append(i)
+
+# print(li)
+
+
+#wap to input a string and find the longest word of string
+
+# str=input("enter a string: ")   # my name is vatsal
+# a=str.split(" ")
+# print(a)
+# long_word=max(a,key=len)
+# print(long_word)
+
+#wap to find smallest postive integer from the list
+# li=[2,3,1,-3,-6,-10,89,90,12,55]
+
+# Write a Python program to get a list, sorted in increasing order by the last element
+# in each element from a given list .
+# Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+# Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
+
+# li= [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+
+# for i in range(0,len(li)):
+#     for j in range(i+1,len(li)):
+#         if li[i][1]>li[j][1]:
+#             li[i],li[j]=li[j],li[i]
+            
+# print("last sorted element list is:",li)          
+        
+
+#in the given list, sort elements of list on the basis of middle element
+# li=[(2,5,1),(4,0,2),(5,6,1),(2,3,4)]
+#res=[((4,0,2),(2,3,4),(2,5,1),(5,6,1))]
+
+# Write a Python program to generate and print a list where
+# the values are square numbers between 1 and 20 (both included).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

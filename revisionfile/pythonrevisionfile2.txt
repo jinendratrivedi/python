@@ -1,0 +1,558 @@
+# Python is a programming language created by Guido von rossum , in 1989
+# Python is very popular -> easy to use and dynamic language
+
+# Use
+# 1- Web developement
+# 2- Data Science
+# 3- AI/ Machine learning
+# 4- Backend
+
+# Features
+# 1- Easy to use
+# 2- Dynamic in nature- need not to specify datatype
+# 3- Free and open source
+# 4- High level language ->code in human readable form 
+# 5- Garbage allocation- deallocation
+# 6- Very vast library 
+
+# first program-> print hello world
+# to print -> print()
+
+#print("hello world!!!!!!!!")   #single line comment
+"""
+print("shraddha")
+print(100)
+a=80          #multiline comment
+b=10
+print(a)
+print(a*b)
+print(50+10.78)
+print(10 + 50)  """
+
+#Comments-> unexecutable code
+#1- single line  -> #
+#2- multiline comment -> """ """ 
+# ctrl+/
+# """ """ triple line comments is also a doc string
+
+#Variables-> it is like a container or name in which we store value
+
+# age=22
+# name="chetan"
+# price=89.90
+
+# print("details are-",age,name,price)
+
+# #Multiple assignments -> Assign values in one go
+
+# a,b,c=10,20,30
+# x=y=z=150
+
+# print(b,c)
+# print(x,y,z)
+
+#wap to swap 2 numbers without using third variable
+
+# a=10
+# b=50
+# a, b = b, a
+
+# print(a,b)
+
+#USER INPUT-> input()
+#by default input() takes only string as input
+
+# name=input("enter your name:")
+# print(name)
+# print(type(name))
+
+# num=int(input("enter a number: "))
+# print(num)
+# print(type(num))
+
+# price=float(input("enter price:"))
+# print(price)
+# print(type(price))
+
+#WAP to find SI ,Simple interest
+#Wap to add 4 number together 2 float , 2 integers and then find type of output
+
+#Datatypes in python
+#1-integer -> +ve , -ve or 0
+#2-Float -> any decimal value(-ve , +ve)
+#3-Nonetype -> When no value is assigned , then its nonetype #None
+#4-Boolean -> True/False ->1/0
+#5-string ->
+
+# a=-10.0
+# print(type(a))
+
+# age=None
+# print(type(age))
+
+# is_adult=True
+# num=False
+# print(type(is_adult))
+# print(num)
+# print(True+True+False)  #1+1+0 =2
+
+
+#STRING-> collection of characters is string , It is rep in '' , " " ,""" """
+#for multiline string we use """ """
+# character='s'
+# name="om chetan"
+# age="12"
+
+# print(type(name))
+# print(type(age))   #string because age is in " "
+
+# sen="""this is my
+# house 
+# hiiiiiiiiiiiiiiiiii guys
+# how r u???????????????????"""
+
+# print(sen)
+
+# name="Shraddha"
+# #to find length we use len()
+# print(len(name))
+# print(len("vatsal"))
+
+# lang="python programming"
+# #STRING is immutable (non changable) , ordered in nature
+# lang[0]="C"  
+# print(lang)   #error because str is immutable
+
+#To access any element in string we use INDEXING
+#Indexing always starts from 0
+#when we start indexing from left to right then it is +ve indexing
+#when we start indexing from right to left then it is -ve indexing
+# print(lang[0])
+# print(lang[5])
+# print(lang[-1])
+# print(lang[-4])
+
+#SLICING-> To access any part of string , we use slicing
+#         ->  stringname[start_index : end_index]
+#          ->                          endindex=endindex-1
+
+lang="python programming language"
+# print(lang[0:6])
+# print(lang[8:15])
+# print(lang[ : 7])
+# print(lang[10: ])
+# print(lang[ : ])
+
+# print(lang[-8:-2])
+
+#ADD steps
+# print(lang[0:11:2])  #ADDING STEPS
+# print(lang[ : :4])
+
+# lang="python programming language"
+# print(lang[0:15:3])
+
+#WAP to input a string and print it by missing 2 steps
+#wap to input a string and reverse it
+
+# str=input("enter a string: ")
+# print(str[ : :-1])
+
+#Methods of string.
+
+# str="pyThOn proGraMminGpppp"
+
+# print(str.capitalize())  #it returns firat letter Capital
+# print(str.upper())
+# print(str.lower())
+# print(str.count("p"))
+# print(str.replace("p","$@"))
+# print(str.endswith("ing"))
+# print(str.startswith("py"))
+# print(str.find("G"))
+
+# str="      HIIIII     "
+# print(str.strip())
+
+# str="I am living in this world"
+# print(str.split(" "))
+
+# #Check methods
+# str="1234nu"
+# print(str.isupper())
+# print(str.islower())
+# print(str.isalnum())
+# print(str.isdigit())
+
+#Conditional Staements
+# if elif else
+# if-> when we have to check only 1 condition
+# if condition:
+#   #code
+
+#wap to ceck that string ends with "ing" or not
+# str="motioning"
+
+# if str.endswith("ing"):
+#     print("it is ending with ing")
+# else:
+#     print("it is not ending with ing")
+
+#wap to input a string and divide it into words
+
+#WAP to check the traffic light color bu user
+#if its red then STOPPP
+#if its green then GOOOOOO
+#if its orange or yellow then WAIT
+#it any other color then light not working
+
+
+# color=input("enter light color name:").lower()
+
+# if color=="red":
+#     print("STOPPPPPP")
+# elif color=="green":
+#     print("GOOOOOO")
+# elif color=="orange" or color=="yellow":
+#     print("WAITTTT")
+# else:
+#     print("light not working properly")
+
+# Check if a Character is a Vowel or Consonant
+
+
+# char=input("enter a character: ")
+
+# if char in 'aeiou':
+#     print("its vowel")
+# else:
+#     print("its consonant")
+
+#WAP to find maximum between 3 numbers
+
+#wap to input 2 strings and check that which string is largest
+
+#wap to check that no is +ve , -ve or 0
+
+# num=int(input("enter a number: "))
+
+# if num>0:
+#     print("no is positive")
+# elif num<0:
+#     print("no is negative")
+# else:
+#     print("no is 0")
+
+
+
+
+
+
+
+
+
+
+
+
+#LIST-> It ia a datatype which store diff types of datatypes
+#    -> It is rep in [ ]
+#    -> List is ordered , mutable (changeable), allow duplicates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

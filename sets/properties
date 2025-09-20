@@ -1,0 +1,16 @@
+# Properties
+
+s1={1,2,3,"ab","def"}  # s1 is superset of s2
+s2={1,2,3}   # s2 is subset of s1
+s3={5,6,"ab"}  # s2 and s3 are disjoint sets
+
+#subset -> when all elements are present in other set
+#superset -> when set has all elements of  set
+#disjoint -> when  2 sets have no common elements
+
+print(s1.issubset(s2)) # False
+print(s2.issubset(s1)) # True
+print(s1.issuperset(s2)) # True
+print(s2.issuperset(s1)) # False
+print(s1.isdisjoint(s3)) # False
+print(s2.isdisjoint(s3)) # True

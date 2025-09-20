@@ -1,0 +1,53 @@
+# 1. Generate a Random Integer between Two Numbers
+import random
+n= random.randint(1,5)
+print(n)
+
+# 2. Generate a Random Float between 0 and 1
+a=random.random()
+print(a)
+
+#  3. Generate a Random Float within a Range
+b=random.uniform(0,5)
+print(b)
+
+# 4. Randomly Choose an Item from a List
+choose = [1,2,3,4]
+print(random.choice(choose))
+
+# 5. Randomly Shuffle a List
+lst = [1,11,12,34]
+random.shuffle(lst)
+print(lst)
+
+# 6. Generate a Random Even Number
+e=random.randrange(0,10,2)
+print(e)
+
+#  7. Generate a Random Odd Number
+f=random.randrange(1,10,1)
+print(f)
+
+# 8.Select multiple random items from a list (without replacement).
+lst1 = ["apple",1,2,3,"banana"]
+print(random.sample(lst1,3))
+
+# 9. Generate a random boolean value (`True` or `False`).
+g = random.choice(['True','False'])
+print(g)
+
+# 10. Generate a random string of 5 letters.
+
+# 11. Pick a random item from a list with specified weights.
+items = ["apple", "banana", "cherry"]
+weights = [0.1, 0.3, 0.6]
+random_choice = random.choices(items, weights=weights, k=1)
+print(random_choice)
+
+#13. Simulate the roll of a 6-sided die.
+h=random.randint(1,6)
+print(h)
+
+# 15. Simulate a coin toss (either "Heads" or "Tails").
+i=random.choice(["heads","tails"])
+print(i)

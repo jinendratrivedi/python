@@ -1,0 +1,4 @@
+
+task1->#WAP to find SI 
+tak2->Wap to add 4 number together 2 float , 2 integers and then find type of output
+task3->#WAP to input a string and print it by missing 2 steps
