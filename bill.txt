@@ -1,0 +1,24 @@
+Item: Pizza
+Qty: 2
+Price: 120
+Total: 240
+Item: Burger
+Qty: 1
+Price: 60
+Total: 60
+Item: Sandwich
+Qty: 1
+Price: 50
+Total: 50
+Item: Pasta
+Qty: 2
+Price: 80
+Total: 160
+Item: French Fries
+Qty: 2
+Price: 40
+Total: 80
+
+Grand Total: 590
+Discount: 59.0
+Final Amount: 531.0

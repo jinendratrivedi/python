@@ -1,0 +1,6 @@
+Name: krishna trivedi
+Roll No: 1
+Marks: 34, 56, 67, 89, 66
+Total: 312
+Average: 62.4
+Grade: C

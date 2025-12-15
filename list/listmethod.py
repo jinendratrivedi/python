@@ -15,7 +15,6 @@ print(li)
 li1=["abc","hiii","efg","ygd","dog"]
 li1.sort()
 print(li1)
-
 li1.sort(reverse=True)
 print(li1)
 
